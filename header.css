@@ -1,12 +1,8 @@
-div.header-img {
-    display: flex;
-    align-content: center;
-    align-items: center;
-    align-self: center;
-}
-div.header-img header span img{
-    display: flex;
-    align-content: center;
-    align-items: center;
-    align-self: center;
+div.node-header{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+  margin-top: 2%;
+  margin-bottom: 1%;
 }
