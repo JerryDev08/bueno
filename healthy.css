@@ -1,0 +1,36 @@
+#healthy {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+div.card-node {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px
+}
+div.card-node div.card-image img {
+    width: 100%;
+}
+div.card-node div.card-content {
+    top: 70px;
+    left: 35px;
+    width: 260px;
+    height: 100px;
+    margin: 30px;
+    background-color: white;
+    padding: 5px;
+    border-color: #b0c364;
+    border: 2px;
+    position: absolute;
+}
+div.card-node div.card-content p {
+    color: #b0c364;
+    font-size: 12px;
+    text-align: center;
+}
+div.card-node div.card-content h2 {
+    color: black;
+    text-align: center;
+}
