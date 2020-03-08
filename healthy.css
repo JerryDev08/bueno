@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
 #healthy {
+    font-family: 'Montserrat', sans-serif;
     width: 90%;
     max-width: 1200px;
     margin: 0 auto;
@@ -33,4 +36,8 @@ div.card-node div.card-content p {
 div.card-node div.card-content h2 {
     color: black;
     text-align: center;
+}
+
+#clear {
+    clear: both;
 }
