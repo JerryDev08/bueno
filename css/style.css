@@ -23,6 +23,9 @@ div.header-img {
     justify-content:right;
     margin-left: 17px;
 }
+#nav-bar a:hover{
+    color: #b0c364;
+}
 
 /* Alberto y Jorge*/
 #healthy {
