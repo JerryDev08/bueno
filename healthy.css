@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+#healthy {
+    font-family: 'Montserrat', sans-serif;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+div.card-node {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px
+}
+div.card-node div.card-image img {
+    width: 100%;
+}
+div.card-node div.card-content {
+    top: 60px;
+    left: 23px;
+    width: 260px;
+    height: 100px;
+    margin: 30px;
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+}
+div.card-node div.card-content p {
+    color: #b0c364;
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: center;
+}
+
+.border{
+    border: 2px solid #b0c364;
+}
+div.card-node div.card-content h2 {
+    color: black;
+    text-align: center;
+}
+
+#clear {
+    clear: both;
+}
