@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+#carrousel {
+    font-family: 'Montserrat', sans-serif;
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+div.carrousel-card-node {
+    width: 33%;
+    float: left;
+    box-sizing: border-box;
+    position: relative;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+}
+div.carrousel-card-node div.carrousel-card-image1 img {
+    width: 100%;
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+}
+div.carrousel-card-node div.carrousel-card-image2 img {
+    width: 100%;
+}
+div.carrousel-card-node div.carrousel-card-image3 img {
+    width: 100%;
+    -webkit-filter: brightness(0.5);
+    filter: brightness(0.5);
+}
+div.carrousel-card-node div.carrousel-card-content {
+    top: 40px;
+    left: 20px;
+    width: 260px;
+    height: 230px;
+    margin: 30px;
+    background-color: white;
+    padding: 15px;
+    position: absolute;
+}
+div.carrousel-card-node div.carrousel-card-content p.the-best {
+    color: #b0c364;
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: center;
+}
+
+div.carrousel-card-node div.carrousel-card-content p.editor {
+    color: #7a7a7a;
+    font-weight: bolder;
+    font-size: 12px;
+    text-align: center;
+}
+
+.carrousel-border{
+    border: 2px solid #b0c364;
+    height: 180px;
+    padding-top: 45px;
+}
+div.carrousel-card-node div.carrousel-card-content h2 {
+    color: black;
+    text-align: center;
+}
+
+#clear {
+    clear: both;
+}
