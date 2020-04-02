@@ -96,6 +96,14 @@ div.carrousel-card-node div.carrousel-card-content h2 {
     right: 27px;
 }
 
+.boton-prev:hover {
+	background-color:#7a7a7a;
+}
+
+.boton-next:hover {
+	background-color:#7a7a7a;
+}
+
 #clear {
     clear: both;
 }
