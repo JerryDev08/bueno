@@ -3,15 +3,13 @@ body{
     font-family: 'Montserrat', sans-serif;
     color: #7a7a7a;
 }
-
-/*Header*/
+                /*Header*/
 div.header-img {
     display: flex;
     justify-content: center;
     margin: 2%;
 }
-
-/*Nav-bar*/
+                 /*Nav-bar*/
 #nav-bar{
     margin-left: 10.5%;
 }
@@ -30,8 +28,7 @@ div.header-img {
 #nav-bar a:hover{
     color: #b0c364;
 }
-
-/*Cards healthy*/
+                 /*Cards healthy*/
 #healthy {
     font-family: 'Montserrat', sans-serif;
     width: 90%;
@@ -64,7 +61,6 @@ div.card-node div.card-content p {
     font-size: 12px;
     text-align: center;
 }
-
 .border{
     border: 2px solid #b0c364;
 }
@@ -72,11 +68,10 @@ div.card-node div.card-content h2 {
     color: black;
     text-align: center;
 }
-
 #clear {
     clear: both;
 }
-/* Central Cards*/
+                 /* Central Cards*/
 div.central_card{ 
     display: flex;
     width: 80%;
