@@ -1,15 +1,19 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:400,600,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,400,600,700,800&display=swap');
+body{
+    font-family: 'Montserrat', sans-serif;
+    color: #7a7a7a;
+}
 
-/* Gerardo*/
+/*Header*/
 div.header-img {
     display: flex;
     justify-content: center;
     margin: 2%;
 }
 
-/* Alejandro*/
+/*Nav-bar*/
 #nav-bar{
-    margin-left: 6%;
+    margin-left: 10.5%;
 }
 #nav-bar a {
     background-color: white;
@@ -27,7 +31,7 @@ div.header-img {
     color: #b0c364;
 }
 
-/* Alberto y Jorge*/
+/*Cards healthy*/
 #healthy {
     font-family: 'Montserrat', sans-serif;
     width: 90%;
@@ -71,4 +75,107 @@ div.card-node div.card-content h2 {
 
 #clear {
     clear: both;
+}
+/* Central Cards*/
+div.central_card{ 
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-top: 3%;
+    margin-bottom: 2%;
+    padding: 1%;
+    padding-bottom: 0%;
+    box-sizing: border-box;
+}
+div.central_card h4{
+    color: #b0c364;
+    font-size: 13px;
+}
+div.central_card h2{
+    color: #000000;
+    font-weight: 600;
+}
+div.central_card time{
+    font-size: 12px;
+}
+div.central_card span{
+    font-size: 12px;
+}
+div.central_card div.central_card_img{
+    float: left;
+    justify-content: center;
+    padding-top: 1%;
+    padding-bottom: 0%;
+    width: 49%;
+    height: auto;
+}
+div.central_card div.central_card_img img{
+    width: 100%;
+    height: auto;
+}
+div.central_card div.central_card_txt{
+    width: 51%;
+    height: auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-left: 2%;
+    font-weight: 500;
+}
+div.central_card div.central_card_txt button{
+    color: #ffffff;
+    background-color: #b0c364;
+    border: none;
+    padding: 3% 4%;
+}
+
+div.central_card2{
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 2%;
+    padding: 1%;
+    box-sizing: border-box;
+}
+div.central_card2 h4{
+    color: #b0c364;
+    font-size: 13px;
+}
+div.central_card2 h2{
+    color: #000000;
+    font-weight: 600;
+}
+div.central_card2 time{
+    font-size: 12px;
+}
+div.central_card2 span{
+    font-size: 12px;
+}
+div.central_card2 div.central_card_img2{
+    float: right;
+    justify-content: center;
+    padding-top: 0%;
+    width: 49%;
+    height: auto;
+}
+div.central_card2 div.central_card_img2 img{
+    width: 100%;
+    height: auto;
+}
+div.central_card2 div.central_card_txt2{
+    float: left;
+    width: 51%;
+    height: auto;
+    text-align: center;
+    padding-top: 5%;
+    padding-right: 2%;
+    font-weight: 500;
+}
+div.central_card2 div.central_card_txt2 button{
+    color: #ffffff;
+    background-color: #b0c364;
+    box-shadow: none;
+    border: none;
+    padding: 3% 4%;
 }
