@@ -225,7 +225,7 @@ div.central_card2{
     width: 73%;
     max-width: 1200px;
     margin: 0 auto;
-    margin-bottom: 2%;
+    margin-bottom: 4%;
     padding: 1%;
     box-sizing: border-box;
 }
@@ -273,44 +273,98 @@ div.central_card2 div.central_card_txt2 button{
     padding: 3% 4%;
 }
                  /*mid cards*/
+div.last_section{
+    display: flex;
+    float: left;
+    box-sizing: border-box;
+}
 div.main-content{
     width: auto;
     display: flex;
     box-sizing: border-box;
     float: left;
     margin: 15px; 
-    margin-left: 15%;
-   }
-   div.main-content div.main-content-image img{
+    margin-left: 22%;
+}
+div.main-content div.main-content-image img{
      width: 300px;
      height: 280px;
-   }
-   div.main-content-third{
+}
+div.main-content-third{
      padding: 20px;
      padding-bottom: 0px;
      padding-top: 0;
      margin-top: -12px;
      border: 900px;
-   }
-   div.main-content-h1 p{
+}
+div.main-content-h1 p{
      color: #b0c346;
      font-size: 13px;
      font-weight: bolder;
-   }
-   div.main-content-h2 h2{
+}
+div.main-content-h2 h2{
      font-weight: bolder;
      font-size: 25px;
-   }
-   div.main-content-h2 div.main-content-date time{
+}
+div.main-content-h2 div.main-content-date time{
      color: #7a7a7a;
      margin-top: -13px;
      font-size: 10px;
      font-weight: bold;
-   }
-   div.main-content-text{
+}
+div.main-content-text{
      text-align: justify;
      color: #7a7a7a;
      font-size: small;
      font-weight: 500;
      margin-top: 26px;
-   }
+}
+                 /*Last cards*/
+#cards-derecha{
+    width: 30%;
+    margin-top: 1%;
+    margin-right: 15%;
+}
+.general{
+    width: 260px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: auto;
+}
+div.general div.imagen{
+    width: 40%;
+    float: left;
+   margin-bottom: 20px;
+}
+div.general div.imagen img{
+    width: 100%;
+    height: auto;
+}
+div.general div.contenido{
+    width: 60%;
+    float: right;
+    box-sizing: border-box;
+    padding: 0 6px;
+    padding-left: 20px;
+}
+div.general div.contenido h2 {
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: bold;
+}
+div.general div.contenido p {
+    font-family: montserrat;
+    font-size: 8px;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+footer p{
+    margin-left: 15%;
+    font-size: 12px;
+    font-weight: 500;
+    font-family: 'Montserrat', sans-serif;
+    color: #7a7a7a;
+}
+.clear-float {
+    clear: both;
+}

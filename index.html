@@ -1,128 +1,135 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <title>Bueno-food-blog</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <title>Bueno-food-blog</title>
 </head>
+
 <body>
-    <!--Aqui inicia el header-->
-    <section id="header"> 
-        <div class="header-img">
-         <header>
-          <a href=""><img src="assets/logo.png" alt="HOME"></a> 
-         </header>
+  <!--Aqui inicia el header-->
+  <section id="header">
+    <div class="header-img">
+      <header>
+        <a href=""><img src="assets/logo.png" alt="HOME"></a>
+      </header>
+    </div>
+  </section>
+  <!--Aqui inicia el nav bar-->
+  <section id="nav-bar">
+    <nav>
+      <a href="home"> Home</a>
+      <a href="LifeTips">LifeTips</a>
+      <a href="En 1.2.3"> En 1.2.3</a>
+      <a href="Healthy"> Healthy</a>
+      <a href="Postres y Bebidas">Postres y Bebidas </a>
+      <a href="Slow Food">Slow Food</a>
+    </nav>
+  </section>
+  <!--Aqui inicia el carrusel-->
+  <section id="carrousel">
+    <div class="carrousel-card-node">
+      <div class="carrousel-card-image1">
+        <a href=""><img src="images-healthy/platillo14.jpg" alt="Platillo 1"></a>
+      </div>
+    </div>
+    <div class="carrousel-card-node">
+      <div class="carrousel-card-image2">
+        <a href=""><img src="images-healthy/platillo15.jpg" alt="Platillo 2"></a>
+      </div>
+      <div class="carrousel-card-content" onclick="location.href='#';" style="cursor: pointer;">
+        <div class="carrousel-border">
+          <p class="the-best">THE BEST</p>
+          <h2>Chicken Salad</h2>
+          <p class="editor">JULY 11, 2018 / BY JULIA STILES</p>
         </div>
-    </section>
-    <!--Aqui inicia el nav bar-->
-    <section id="nav-bar"> 
-        <nav>
-            <a href="home"> Home</a>  
-            <a href="LifeTips">LifeTips</a> 
-            <a href="En 1.2.3"> En 1.2.3</a> 
-            <a href="Healthy"> Healthy</a> 
-            <a href="Postres y Bebidas">Postres y Bebidas </a> 
-            <a href="Slow Food">Slow Food</a> 
-        </nav>
-    </section>
-    <!--Aqui inicia el carrusel-->
-    <section id="carrousel">  
-        <div class="carrousel-card-node">
-            <div class="carrousel-card-image1">
-                <a href=""><img src="images-healthy/platillo14.jpg" alt="Platillo 1"></a>
-            </div>
+      </div>
+    </div>
+    <div class="carrousel-card-node">
+      <div class="carrousel-card-image3">
+        <a href=""><img src="images-healthy/platillo16.jpg" alt="PLatillo 3"></a>
+      </div>
+    </div>
+    <a href="#" class="boton-prev">Prev</a>
+    <a href="#" class="boton-next">Next</a>
+    <div class="clear"></div>
+  </section>
+  <!--Aqui inician las 3 cards healthy-->
+  <section id="healthy">
+    <div class=card-node>
+      <div class="card-image">
+        <a href=""><img src="images-healthy/platillo1.jpg" alt="Platillo 1"></a>
+      </div>
+      <div class="card-content" onclick="location.href='#';" style="cursor: pointer;">
+        <div class="border">
+          <p>THE BEST</p>
+          <h2>Platillo 1</h2>
         </div>
-        <div class="carrousel-card-node">
-            <div class="carrousel-card-image2">
-                <a href=""><img src="images-healthy/platillo15.jpg" alt="Platillo 2"></a>
-            </div>
-            <div class="carrousel-card-content" onclick="location.href='#';" style="cursor: pointer;">
-                <div class="carrousel-border">
-                <p class="the-best">THE BEST</p>
-                <h2>Chicken Salad</h2>
-                <p class= "editor">JULY 11, 2018 / BY JULIA STILES</p>
-                </div>
-            </div>
+      </div>
+    </div>
+    <div class="card-node">
+      <div class="card-image">
+        <a href=""><img src="images-healthy/platillo2.jpg" alt="Platillo 2"></a>
+      </div>
+      <div class="card-content" onclick="location.href='#';" style="cursor: pointer;">
+        <div class="border">
+          <p>THE BEST</p>
+          <h2>Platillo 2</h2>
         </div>
-        <div class="carrousel-card-node">
-            <div class="carrousel-card-image3">
-                <a href=""><img src="images-healthy/platillo16.jpg" alt="PLatillo 3"></a>
-            </div>
+      </div>
+    </div>
+    <div class="card-node">
+      <div class="card-image">
+        <a href=""><img src="images-healthy/platillo3.jpg" alt="PLatillo 3"></a>
+      </div>
+      <div class="card-content" onclick="location.href='#';" style="cursor: pointer;">
+        <div class=border>
+          <p>THE BEST</p>
+          <h2>Platillo 3</h2>
         </div>
-        <a href="#" class="boton-prev">Prev</a>
-        <a href="#" class="boton-next">Next</a>
-        <div class="clear"></div>
-    </section>
-    <!--Aqui inician las 3 cards healthy-->
-    <section id="healthy"> 
-        <div class=card-node>
-            <div class="card-image">
-                <a href=""><img src="images-healthy/platillo1.jpg" alt="Platillo 1"></a>
-            </div>
-            <div class="card-content" onclick="location.href='#';" style="cursor: pointer;">
-                <div class="border">
-                <p>THE BEST</p>
-                <h2>Platillo 1</h2>
-            </div>
-            </div>
-        </div>
-        <div class="card-node">
-            <div class="card-image">
-                <a href=""><img src="images-healthy/platillo2.jpg" alt="Platillo 2"></a>
-            </div>
-            <div class="card-content" onclick="location.href='#';" style="cursor: pointer;">
-                <div class="border">
-                <p>THE BEST</p>
-                <h2>Platillo 2</h2>
-                </div>
-            </div>
-        </div>
-        <div class="card-node">
-            <div class="card-image">
-                <a href=""><img src="images-healthy/platillo3.jpg" alt="PLatillo 3"></a>
-            </div>
-            <div class="card-content" onclick="location.href='#';" style="cursor: pointer;">
-                <div class=border>
-                <p>THE BEST</p>
-                <h2>Platillo 3</h2>
-            </div>
-            </div>
-        </div>
-        <div class="clear"></div>
-    </section>
-    <!--Aqui inician las 2 cards centrales-->
-    <section id="central_card"> 
-        <div class="central_card">
-            <div class="central_card_img">
-                <img src="images-healthy/platillo4.jpg" alt="platillo 4">
-            </div>
-            <div class="central_card_txt">
-                <h4>HEALTHY</h4>
-                <h2>Friend eggs with ham</h2>
-                <time datetime="2020-02-25 09:04">25 de febrero, 2020</time><span>  /  BY AUTOR</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptatibus tempore labore officia in a, optio maxime facere aut perspiciatis aliquam assumenda hic vero, minima incidunt culpa temporibus commodi dolorum officiis repellat nobis recusandae omnis. Odit at placeat molestias quidem!</p>
-                <a href=""><button>Read more</button></a>
-            </div>
-            <div class="clear"></div>
-        </div>
-        <div class="central_card2">
-            <div class="central_card_txt2">
-                <h4>HEALTHY</h4>
-                <h2>Steak with boiled vegetables</h2>
-                <time datetime="2020-02-25 09:04">25 de febrero, 2020</time><span>  /  BY AUTOR</span>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptatibus tempore labore officia in a, optio maxime facere aut perspiciatis aliquam assumenda hic vero, minima incidunt culpa temporibus commodi dolorum officiis repellat nobis recusandae omnis. Odit at placeat molestias quidem!</p>
-                <a href=""><button>Read more</button></a>
-            </div>
-            <div class="central_card_img2">
-                <img src="images-healthy/platillo5.jpg" alt="platillo 5">
-            </div>
-            <div class="clear"></div>
-        </div>
-    </section>
-    <!--Aquí inician las cards mid-->
+      </div>
+    </div>
+    <div class="clear"></div>
+  </section>
+  <!--Aqui inician las 2 cards centrales-->
+  <section id="central_card">
+    <div class="central_card">
+      <div class="central_card_img">
+        <img src="images-healthy/platillo4.jpg" alt="platillo 4">
+      </div>
+      <div class="central_card_txt">
+        <h4>HEALTHY</h4>
+        <h2>Friend eggs with ham</h2>
+        <time datetime="2020-02-25 09:04">25 de febrero, 2020</time><span> / BY AUTOR</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptatibus tempore labore officia in a,
+          optio maxime facere aut perspiciatis aliquam assumenda hic vero, minima incidunt culpa temporibus commodi
+          dolorum officiis repellat nobis recusandae omnis. Odit at placeat molestias quidem!</p>
+        <a href=""><button>Read more</button></a>
+      </div>
+      <div class="clear"></div>
+    </div>
+    <div class="central_card2">
+      <div class="central_card_txt2">
+        <h4>HEALTHY</h4>
+        <h2>Steak with boiled vegetables</h2>
+        <time datetime="2020-02-25 09:04">25 de febrero, 2020</time><span> / BY AUTOR</span>
+        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptatibus tempore labore officia in a,
+          optio maxime facere aut perspiciatis aliquam assumenda hic vero, minima incidunt culpa temporibus commodi
+          dolorum officiis repellat nobis recusandae omnis. Odit at placeat molestias quidem!</p>
+        <a href=""><button>Read more</button></a>
+      </div>
+      <div class="central_card_img2">
+        <img src="images-healthy/platillo5.jpg" alt="platillo 5">
+      </div>
+      <div class="clear"></div>
+    </div>
+  </section>
+  <!--Aquí inician las cards mid-->
+  <div class="last_section">
     <section>
-        <div class="main-content">
+      <div class="main-content">
         <div class="main-content-image">
           <img src="images-comida/chiles.jpg">
         </div>
@@ -169,8 +176,8 @@
           </div>
         </div>
         <div class="clear"></div>
-       </div>
-        <div class="main-content">
+      </div>
+      <div class="main-content">
         <div class="main-content-image">
           <img src="images-comida/ramen.jpg">
         </div>
@@ -195,8 +202,74 @@
         <div class="clear"></div>
       </div>
     </section>
-
-
-
+    <!--Aqui inicia las last cards-->
+    <section id="cards-derecha">
+      <div class="general">
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <div class="imagen">
+            <img src="images-comida/mojarra.jpg" alt="">
+          </div>
+          <div class="contenido">
+            <h2> Platillo 1</h2>
+            <p>JULY 11, 2018 / BY JULIA STILES</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="general">
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <div class="imagen">
+            <img src="images-comida/hamburguesa.png" alt="">
+          </div>
+          <div class="contenido">
+            <h2> Platillo 2 </h2>
+            <p>JULY 11, 2018 / BY JULIA STILES</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="general">
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <div class="imagen">
+            <img src="images-comida/pasta.jpg" alt="">
+          </div>
+          <div class="contenido">
+            <h2> Platillo 3 </h2>
+            <p>JULY 11, 2018 / BY JULIA STILES</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="general">
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <div class="imagen">
+            <img src="images-comida/pie.jpg" alt="">
+          </div>
+          <div class="contenido">
+            <h2> Platillo 4 </h2>
+            <p>JULY 11, 2018 / BY JULIA STILES</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+      <div class="general">
+        <div onclick="location.href='#';" style="cursor: pointer;">
+          <div class="imagen">
+            <img src="images-comida/sopes.jpg" alt="">
+          </div>
+          <div class="contenido">
+            <h2>Platillo 5 </h2>
+            <p>JULY 11, 2018 / BY JULIA STILES</p>
+          </div>
+        </div>
+      </div>
+      <div class="clear"></div>
+    </section>
+    <div class="clear"></div>
+  </div>
 </body>
+<footer>
+  <p>Copyright &copy2020</p>
+</footer>
+
 </html>
