@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+#cards-derecha{
+    width: 30%;
+
+
+}
+
+.general{
+    width: 260px;
+    margin-bottom: 20px;
+    background-color: white;
+    height: auto;
+
+
+}
+
+div.general div.imagen{
+    width: 40%;
+    float: left;
+   margin-bottom: 20px;
+
+
+
+}
+
+div.general div.imagen img{
+    width: 100%;
+    height: auto;
+
+
+
+}
+
+div.general div.contenido{
+    width: 60%;
+    float: right;
+    box-sizing: border-box;
+    padding: 0 6px;
+    padding-left: 20px;
+
+}
+
+div.general div.contenido h2 {
+    font-family: montserrat;
+    font-size: 14px;
+    font-weight: bold;
+
+}
+
+div.general div.contenido p {
+    font-family: montserrat;
+    font-size: 8px;
+    font-weight: bold;
+    color: #7a7a7a;
+
+}
+
+.clear-float {
+    clear: both;
+}
+
+
+
+
+
+
