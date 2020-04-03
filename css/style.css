@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Montserrat:300,500,400,600,700,800&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap');
 body{
     font-family: 'Montserrat', sans-serif;
     color: #7a7a7a;
@@ -85,7 +85,7 @@ div.carrousel-card-node div.carrousel-card-content p.editor {
     padding-top: 45px;
 }
 div.carrousel-card-node div.carrousel-card-content h2 {
-    color: black;
+    color: #000000;
     text-align: center;
 }
 .boton-prev {
@@ -124,7 +124,7 @@ div.carrousel-card-node div.carrousel-card-content h2 {
 }
                  /*Cards healthy*/
 #healthy {
-    width: 70%;
+    width: 73%;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 3%;
@@ -145,8 +145,9 @@ div.card-node div.card-content {
     width: 260px;
     height: 100px;
     margin: /*30px*/0 auto;
+    margin-left: 2.5%;
     background-color: white;
-    padding: 15px;
+    padding:/*15px*/ 5%;    
     position: absolute;
 }
 div.card-node div.card-content p {
@@ -159,7 +160,7 @@ div.card-node div.card-content p {
     border: 2px solid #b0c364;
 }
 div.card-node div.card-content h2 {
-    color: black;
+    color: #000000;
     text-align: center;
 }
 div.clear {
@@ -168,7 +169,7 @@ div.clear {
                  /* Central Cards*/
 div.central_card{ 
     display: flex;
-    width: 70%;
+    width: 73%;
     max-width: 1200px;
     margin: 0 auto;
     margin-top: 3%;
@@ -187,9 +188,11 @@ div.central_card h2{
 }
 div.central_card time{
     font-size: 12px;
+    font-weight: 600;
 }
 div.central_card span{
     font-size: 12px;
+    font-weight: 600;
 }
 div.central_card div.central_card_img{
     float: left;
@@ -219,7 +222,7 @@ div.central_card div.central_card_txt button{
 }
 div.central_card2{
     display: flex;
-    width: 70%;
+    width: 73%;
     max-width: 1200px;
     margin: 0 auto;
     margin-bottom: 2%;
@@ -236,9 +239,11 @@ div.central_card2 h2{
 }
 div.central_card2 time{
     font-size: 12px;
+    font-weight: 600;
 }
 div.central_card2 span{
     font-size: 12px;
+    font-weight: 600;
 }
 div.central_card2 div.central_card_img2{
     float: right;
