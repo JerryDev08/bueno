@@ -272,3 +272,45 @@ div.central_card2 div.central_card_txt2 button{
     border: none;
     padding: 3% 4%;
 }
+                 /*mid cards*/
+div.main-content{
+    width: auto;
+    display: flex;
+    box-sizing: border-box;
+    float: left;
+    margin: 15px; 
+    margin-left: 15%;
+   }
+   div.main-content div.main-content-image img{
+     width: 300px;
+     height: 280px;
+   }
+   div.main-content-third{
+     padding: 20px;
+     padding-bottom: 0px;
+     padding-top: 0;
+     margin-top: -12px;
+     border: 900px;
+   }
+   div.main-content-h1 p{
+     color: #b0c346;
+     font-size: 13px;
+     font-weight: bolder;
+   }
+   div.main-content-h2 h2{
+     font-weight: bolder;
+     font-size: 25px;
+   }
+   div.main-content-h2 div.main-content-date time{
+     color: #7a7a7a;
+     margin-top: -13px;
+     font-size: 10px;
+     font-weight: bold;
+   }
+   div.main-content-text{
+     text-align: justify;
+     color: #7a7a7a;
+     font-size: small;
+     font-weight: 100;
+     margin-top: 26px;
+   }
