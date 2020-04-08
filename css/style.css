@@ -221,6 +221,7 @@ div.central_card div.central_card_txt button{
     background-color: #b0c364;
     border: none;
     padding: 3% 4%;
+    cursor: pointer;
 }
 div.central_card2{
     display: flex;
@@ -273,6 +274,7 @@ div.central_card2 div.central_card_txt2 button{
     box-shadow: none;
     border: none;
     padding: 3% 4%;
+    cursor: pointer;
 }
                  /*mid cards*/
 div.last_section{
