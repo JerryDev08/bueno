@@ -1,0 +1,76 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+#author {
+    width: 100%;
+    max-width: 1200px;
+    font-family: Montserrat;
+    margin-bottom: 3%;
+}
+#author div.author-card {
+    width: 20%;
+    height: 350px;
+    background-image: url(images-autor/Polka\ wallpaper.jpg);
+
+}
+div.author-card div.author-image {
+    text-align: center;
+    padding-top: 20%;
+    padding-bottom: 5%;
+}
+div.author-card div.author-image img{
+    width: 70%;
+    border-radius: 50%;
+}
+div.author-card div.author-content {
+    padding: 0 10%;
+}
+.author-text {
+    font-size: 13px;
+    text-align: center;
+    color: #7a7a7a;
+    font-weight: 500;
+    line-height: 2;
+}
+.author-name {
+    font-weight: 600;
+}
+.author-content {
+
+}
+#new-posts {
+    width: 20%;
+}
+div.card-horizontal {
+    width: 100%;
+    background-color: #FFFFFF;
+    margin-bottom: 5%;
+}
+div.card-horizontal div.card-horizontal-image {
+    width: 40%;
+    float: left;
+}
+div.card-horizontal div.card-horizontal-image img {
+    width: 100%;
+    height: auto;
+}
+div.card-horizontal div.card-horizontal-content {
+    width: 60%;
+    float: right;
+    padding: 0 6px;
+    box-sizing: border-box;
+    padding-left: 20px;
+}
+div.card-horizontal div.card-horizontal-content h2 {
+    font-weight: bold;
+    font-size: 14px;
+    font-family: montserrat;
+}
+div.card-horizontal div.card-horizontal-content p {
+    font-size: 8px;
+    font-family: montserrat;
+    font-weight: bold;
+    color: #7a7a7a;
+}
+.clear-float {
+    clear: both;
+}
