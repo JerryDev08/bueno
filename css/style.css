@@ -378,6 +378,7 @@ div.main-content-h1 p {
 div.main-content-h2 h2 {
   font-weight: bolder;
   font-size: 25px;
+  color: #000000;
 }
 div.main-content-h2 div.main-content-date time {
   color: #7a7a7a;
@@ -419,10 +420,12 @@ div.general div.contenido {
   box-sizing: border-box;
   padding: 0 6px;
   padding-left: 20px;
+  margin-top: -14px;
 }
 div.general div.contenido h2 {
   font-size: 14px;
   font-weight: bold;
+  color: #000000;
 }
 div.general div.contenido p {
   font-size: 8px;
