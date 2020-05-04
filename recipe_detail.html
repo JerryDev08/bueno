@@ -3,7 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./css/recipe_detail.css">
+    <title>Recipe Detail</title>
 </head>
 <body>
     <!--Aqui comienza la seccion de los pasos a seguir-->
@@ -12,7 +14,7 @@
   
            <div class="main-content-image">
   
-            <img src="img/imagen1.PNG">
+            <img src="./images-comida/sopes.jpg">
            </div>
            <div class="main-content-third">
   
@@ -58,6 +60,147 @@
         </div>
       </section>
       <!--Aqui comienza la seccion de los ingredientes-->
-      
+      <section>
+        <div class='Container'>
+           <div class = 'Container-green'> 
+               <div class="Container-green-h1"><h1>Info</h1></div>
+              <ul class="list">
+               <li><i class="material-icons">visibility</i>  1,577 views </li>
+               <hr style="width:85%;text-align:left;margin-left:0">
+              
+               <li><i class="material-icons">timer</i> 30 min </li>
+              
+               <hr style="width:85%;text-align:left;margin-left:0">
+    
+               <li><i class="material-icons">room_service</i> Server 4 </li>
+    
+               <hr style="width:85%;text-align:left;margin-left:0">
+            </ul> 
+            </div>
+               
+           <div class = 'Container-blue-ing'>
+    
+            <div class="Container-blue-h2"> <h2>Ingredients</h2> </div>
+              
+            <div class="Container-blue-form">
+                <form action="/action_page.php" method="get">
+                    <input type="checkbox" name="Ingrediente" value="uno">
+                    <label for="vehicle1"> 4 lbsp[g7 gr] butter</label>
+                    <br>
+                    <hr style="width:90%;text-align:left;margin-left:1">
+    
+                    <input type="checkbox" name="Ingrediente" value="dos">
+                    <label for="vehicle2"> 2 large eggs </label>
+                    <br>
+                    <hr style="width:90%;text-align:left;margin-left:1">
+    
+                    <input type="checkbox" name="Ingrediente" value="tres" >
+                    <label for="vehicle3"> 2 yogurt containers</label>
+                    <br>
+                    <hr style="width:90%;text-align:left;margin-left:1">
+    
+                    <input type="checkbox" name="Ingrediente" value="cuatro" >
+                    <label for="vehicle3"> 1 vanilla or plain yogurt, 170g container </label>
+                    <br>
+                    <hr style="width:90%;text-align:left;margin-left:1">
+    
+                    <input type="checkbox" name="Ingrediente" value="cinco" >
+                    <label for="vehicle3"> 7 containers unbleached white flour</label>
+                    <br>
+                    <hr style="width:90%;text-align:left;margin-left:1">
+    
+                    <input type="checkbox" name="Ingrediente" value="tres" >
+                    <label for="vehicle3"> 15 yogurt countainers milk </label>
+                    <br>
+                    <hr style="width:90%;text-align:left;margin-left:1">
+    
+                    <input type="checkbox" name="Ingrediente" value="tres" >
+                    <label for="vehicle3"> 1/4 tsp cinnamon  </label>
+                    <br>
+                    <hr style="width:90%;text-align:left;margin-left:1">
+                   
+                </form>
+            </div>
+    
+    
+                
+           </div>
+    
+        </div>
+    </section>
+    <!--Aqui comienza la seccion del autor-->
+    <section id="author">
+        <div class="author-card">
+            <div class="author-image">
+                <img src="images-autor/autor.jpg" alt="">
+            </div>
+            <div class="author-content">
+                <p class="author-text">My name is <span class="author-name">Jessica Smith</span>, I'm a passionate cook with a love for 
+                    vegan food.</p>
+            </div>
+        </div>
+    </section>
+    <section id="new-posts">
+        <div class="card-horizontal">
+            <div class= "card-horizontal-inside" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="card-horizontal-image">
+                    <img src="images-healthy/platillo1.jpg" alt="platillo1">
+                </div>
+                <div class="card-horizontal-content">
+                    <h2>Fried eggs with ham</h2>
+                    <p>JULY 11, 2018 / BY JULIA STILES</p>
+                </div>
+            </div>
+            <div class="clear-float"></div>
+        </div>
+            <div class="card-horizontal">
+                <div class= "card-horizontal-inside" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="card-horizontal-image">
+                    <img src="images-healthy/platillo2.jpg" alt="platillo2">
+                </div>
+                <div class="card-horizontal-content">
+                    <h2>Burger with fries</h2>
+                    <p>JULY 11, 2018 / BY JULIA STILES</p>
+                </div>
+            </div>
+            <div class="clear-float"></div>
+        </div>
+        <div class="card-horizontal">
+            <div class= "card-horizontal-inside" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="card-horizontal-image">
+                    <img src="images-healthy/platillo3.jpg" alt="platillo3">
+                </div>
+                <div class="card-horizontal-content">
+                    <h2>Avocado & Oisters</h2>
+                    <p>JULY 11, 2018 / BY JULIA STILES</p>
+                </div>
+            </div>
+            <div class="clear-float"></div>
+        </div>
+            <div class="card-horizontal">
+                <div class= "card-horizontal-inside" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="card-horizontal-image">
+                    <img src="images-healthy/platillo4.jpg" alt="platillo4">
+                </div>
+                <div class="card-horizontal-content">
+                    <h2>Fried eggs with ham</h2>
+                    <p>JULY 11, 2018 / BY JULIA STILES</p>
+                </div>
+            </div>
+            <div class="clear-float"></div>
+        </div>
+            <div class="card-horizontal">
+                <div class= "card-horizontal-inside" onclick="location.href='#';" style="cursor: pointer;">
+                <div class="card-horizontal-image">
+                    <img src="images-healthy/platillo5.jpg" alt="platillo5">
+                </div>
+                <div class="card-horizontal-content">
+                    <h2>Burgers with fries</h2>
+                    <p>JULY 11, 2018 / BY JULIA STILES</p>
+                </div>
+            </div>
+            <div class="clear-float"></div>
+        </div>
+    </section>
 </body>
 </html>
