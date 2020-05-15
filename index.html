@@ -9,7 +9,9 @@
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
   <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
   <script src="./js/index.js"></script>
+
   <link rel="stylesheet" type="text/css" href="css/style.css">
+    <script src="./js/api.js"></script>
   <title>Bueno-food-blog</title>
 </head>
 
@@ -151,32 +153,27 @@
   <!--Aqui inician las 2 cards centrales-->
   <section id="central_card">
     <div class="central_card">
-      <div class="central_card_img">
-        <img src="images-healthy/platillo4.jpg" alt="platillo 4">
+      <div id = "central_card_img1" class="central_card_img central_card_img1">
       </div>
       <div class="central_card_txt">
-        <h4>HEALTHY</h4>
-        <h2>Friend eggs with ham</h2>
-        <time datetime="2020-02-25 09:04">JULY 11, 2018</time><span> / BY JULIA STILES</span>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptatibus tempore labore officia in a,
-          optio maxime facere aut perspiciatis aliquam assumenda hic vero, minima incidunt culpa temporibus commodi
-          dolorum officiis repellat nobis recusandae omnis. Odit at placeat molestias quidem!</p>
+        <h4 id = "Category-central"></h4>
+        <h2 id = "title-central"></h2>
+        <time id = "datetime" datetime="2020-03-10 18:00"></time><span> / </span><span id="spancito"> / </span>
+        <p id = "parrafin"></p>
         <a href=""><button>Read more</button></a>
       </div>
       <div class="clear"></div>
     </div>
+    <!------------------------------------------------------------------------------------------->
     <div class="central_card2">
       <div class="central_card_txt2">
-        <h4>HEALTHY</h4>
-        <h2>Steak with boiled vegetables</h2>
-        <time datetime="2020-02-25 09:04">JULY 11, 2018</time><span> / BY JULIA STILES</span>
-        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Magni voluptatibus tempore labore officia in a,
-          optio maxime facere aut perspiciatis aliquam assumenda hic vero, minima incidunt culpa temporibus commodi
-          dolorum officiis repellat nobis recusandae omnis. Odit at placeat molestias quidem!</p>
+        <h4 id="Category-central2"></h4>
+        <h2 id="title-central2"></h2>
+        <time id="datetime2" datetime="2020-02-25 09:04"></time><span> / </span><span id="spancitito">  </span>
+        <p id="parrafito"></p>
         <a href=""><button>Read more</button></a>
       </div>
-      <div class="central_card_img2">
-        <img src="images-healthy/platillo5.jpg" alt="platillo 5">
+      <div id="central_card_img2" class="central_card_img2">
       </div>
       <div class="clear"></div>
     </div>
@@ -208,6 +205,7 @@
         </div>
         <div class="clear"></div>
       </div>
+          <!------------------------------------------------------------------------------------------->
       <div class="main-content">
         <div class="main-content-image">
           <img src="images-comida/ensalada.jpg">
@@ -232,6 +230,7 @@
         </div>
         <div class="clear"></div>
       </div>
+          <!------------------------------------------------------------------------------------------->
       <div class="main-content">
         <div class="main-content-image">
           <img src="images-comida/ramen.jpg">

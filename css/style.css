@@ -41,7 +41,7 @@ div.header-img {
 }
 
 #carrousel {
-  font-family: 'Montserrat', sans-serif;
+  font-family: "Montserrat", sans-serif;
   /* width: 100%; */
   /* max-width: 1200px; */
   margin: 0 auto;
@@ -49,14 +49,14 @@ div.header-img {
 }
 
 button.slick-arrow {
-  background-color:#b0c364;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-  font-family: 'Montserrat', sans-serif;
-font-size: 11px;
-font-weight:bold;
-padding:11px 24px;
+  background-color: #b0c364;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 11px 24px;
   position: absolute;
   border: none;
 }
@@ -74,11 +74,11 @@ button.slick-arrow.slick-next {
 }
 
 button.slick-arrow.slick-prev:hover {
-background-color:#bed36c;
+  background-color: #bed36c;
 }
 
 button.slick-arrow.slick-next:hover {
-background-color:#bed36c;
+  background-color: #bed36c;
 }
 
 div.carrousel-card-node {
@@ -118,15 +118,19 @@ div.carrousel-card-node div.carrousel-card-content {
 /* div.carrousel-card-node.slick-active[data-slick-index="1"] div.carrousel-card-content {
   opacity: 1;
 } */
-div.carrousel-card-node.slick-current + .slick-active div.carrousel-card-image img {
+div.carrousel-card-node.slick-current
+  + .slick-active
+  div.carrousel-card-image
+  img {
   opacity: 1;
 }
 
-div.carrousel-card-node.slick-current + .slick-active div.carrousel-card-content {
+div.carrousel-card-node.slick-current
+  + .slick-active
+  div.carrousel-card-content {
   opacity: 1;
   opacity: 1;
 }
-
 
 div.carrousel-card-node div.carrousel-card-content p.the-best {
   color: #b0c364;
@@ -142,7 +146,7 @@ div.carrousel-card-node div.carrousel-card-content p.editor {
   text-align: center;
 }
 
-.carrousel-border{
+.carrousel-border {
   border: 2px solid #b0c364;
   height: 180px;
   padding-top: 45px;
@@ -152,36 +156,34 @@ div.carrousel-card-node div.carrousel-card-content h2 {
   text-align: center;
 }
 .boton-prev {
-background-color:#b0c364;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-  font-family: 'Montserrat', sans-serif;
-font-size:15px;
-font-weight:bold;
-padding:10px 24px;
-  text-decoration:none;
+  background-color: #b0c364;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 24px;
+  text-decoration: none;
   position: absolute;
   top: 45%;
   left: 15px;
 }
 
 .boton-next {
-background-color:#b0c364;
-display:inline-block;
-cursor:pointer;
-color:#ffffff;
-  font-family: 'Montserrat', sans-serif;
-font-size: 15px;
-font-weight:bold;
-padding:10px 24px;
-  text-decoration:none;
+  background-color: #b0c364;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 24px;
+  text-decoration: none;
   position: absolute;
   top: 45%;
   right: 27px;
 }
-
-
 
 #clear {
   clear: both;
