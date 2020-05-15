@@ -1,32 +1,335 @@
+// FEATURE CARROUSEL
+
+document.addEventListener("DOMContentLoaded", function () {
+  var divTextCarrousel = document.getElementById("carrousel-section");
+
+  fetch(
+    "http://api.imagendigital.com/v2/cocinadelirante/node.json/339fd1e0444ddbbd4d4528d8df161108?fields=id,title,url,image,author,created,taxonomy.name&type=receta&limit=6"
+  )
+    .then(function (respuesta) {
+      return respuesta.json();
+    })
+    .then(function (myJSONCarrousel) {
+      // FUNCIONES DE CONVERSIÓN DE TIMESTAMP A FECHA LEGIBLE
+
+      const optionsCarrousel = {
+        year: "numeric",
+        // month: "short",
+        day: "numeric",
+      };
+
+      let timeStampCarrousel1 = myJSONCarrousel.data["0"].created;
+      theDateCarrousel1 = new Date(timeStampCarrousel1 * 1000);
+      dateStringCarrousel1 = theDateCarrousel1.toLocaleDateString(
+        "es-MX",
+        optionsCarrousel
+      );
+
+      let timeStampCarrousel2 = myJSONCarrousel.data["1"].created;
+      theDateCarrousel2 = new Date(timeStampCarrousel2 * 1000);
+      dateStringCarrousel2 = theDateCarrousel2.toLocaleDateString(
+        "es-MX",
+        optionsCarrousel
+      );
+
+      let timeStampCarrousel3 = myJSONCarrousel.data["2"].created;
+      theDateCarrousel3 = new Date(timeStampCarrousel3 * 1000);
+      dateStringCarrousel3 = theDateCarrousel3.toLocaleDateString(
+        "es-MX",
+        optionsCarrousel
+      );
+
+      let timeStampCarrousel4 = myJSONCarrousel.data["3"].created;
+      theDateCarrousel4 = new Date(timeStampCarrousel4 * 1000);
+      dateStringCarrousel4 = theDateCarrousel4.toLocaleDateString(
+        "es-MX",
+        optionsCarrousel
+      );
+
+      let timeStampCarrousel5 = myJSONCarrousel.data["4"].created;
+      theDateCarrousel5 = new Date(timeStampCarrousel5 * 1000);
+      dateStringCarrousel5 = theDateCarrousel5.toLocaleDateString(
+        "es-MX",
+        optionsCarrousel
+      );
+
+      let timeStampCarrousel6 = myJSONCarrousel.data["5"].created;
+      theDateCarrousel6 = new Date(timeStampCarrousel6 * 1000);
+      dateStringCarrousel6 = theDateCarrousel6.toLocaleDateString(
+        "es-MX",
+        optionsCarrousel
+      );
+
+      divTextCarrousel.innerHTML =
+        `
+        <div id="carrousel">
+        <!-- <div class="slider-example"> -->
+            <div class="carrousel-card-node">
+                <div class="carrousel-card-image">
+                <img src="` +
+        myJSONCarrousel.data["0"].image.styles.square_circle +
+        `" alt="` +
+        myJSONCarrousel.data["0"].image.description +
+        `">
+                </div>
+                <div class=carrousel-card-content onclick="location.href='#';" style="cursor: pointer;">
+                    <div class=carrousel-border>
+                    <p class="the-best">` +
+        myJSONCarrousel.data["0"].taxonomy.name +
+        `</p>
+                    <h2>` +
+        myJSONCarrousel.data["0"].title +
+        `</h2>
+                    <p class= "editor">` +
+        dateStringCarrousel1 +
+        ` <br> ` +
+        myJSONCarrousel.data["0"].author.name +
+        `</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrousel-card-node">
+                <div class="carrousel-card-image">
+                <img src="` +
+        myJSONCarrousel.data["1"].image.styles.square_circle +
+        `" alt="` +
+        myJSONCarrousel.data["1"].image.description +
+        `">
+                </div>
+                <div class=carrousel-card-content onclick="location.href='#';" style="cursor: pointer;">
+                    <div class=carrousel-border>
+                    <p class="the-best">` +
+        myJSONCarrousel.data["1"].taxonomy.name +
+        `</p>
+                    <h2>` +
+        myJSONCarrousel.data["1"].title +
+        `</h2>
+                    <p class= "editor">` +
+        dateStringCarrousel2 +
+        ` <br> ` +
+        myJSONCarrousel.data["1"].author.name +
+        `</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrousel-card-node">
+                <div class="carrousel-card-image">
+                <img src="` +
+        myJSONCarrousel.data["2"].image.styles.square_circle +
+        `" alt="` +
+        myJSONCarrousel.data["2"].image.description +
+        `">
+                </div>
+                <div class=carrousel-card-content onclick="location.href='#';" style="cursor: pointer;">
+                    <div class=carrousel-border>
+                    <p class="the-best">` +
+        myJSONCarrousel.data["2"].taxonomy.name +
+        `</p>
+                    <h2>` +
+        myJSONCarrousel.data["2"].title +
+        `</h2>
+                    <p class= "editor">` +
+        dateStringCarrousel3 +
+        ` <br> ` +
+        myJSONCarrousel.data["2"].author.name +
+        `</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrousel-card-node">
+                <div class="carrousel-card-image">
+                <img src="` +
+        myJSONCarrousel.data["3"].image.styles.square_circle +
+        `" alt="` +
+        myJSONCarrousel.data["3"].image.description +
+        `">
+                </div>
+                <div class=carrousel-card-content onclick="location.href='#';" style="cursor: pointer;">
+                    <div class=carrousel-border>
+                    <p class="the-best">` +
+        myJSONCarrousel.data["3"].taxonomy.name +
+        `</p>
+                    <h2>` +
+        myJSONCarrousel.data["3"].title +
+        `</h2>
+                    <p class= "editor">` +
+        dateStringCarrousel4 +
+        ` <br> ` +
+        myJSONCarrousel.data["3"].author.name +
+        `</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrousel-card-node">
+                <div class="carrousel-card-image">
+                <img src="` +
+        myJSONCarrousel.data["4"].image.styles.square_circle +
+        `" alt="` +
+        myJSONCarrousel.data["4"].image.description +
+        `">
+                </div>
+                <div class=carrousel-card-content onclick="location.href='#';" style="cursor: pointer;">
+                    <div class=carrousel-border>
+                    <p class="the-best">` +
+        myJSONCarrousel.data["4"].taxonomy.name +
+        `</p>
+                    <h2>` +
+        myJSONCarrousel.data["4"].title +
+        `</h2>
+                    <p class= "editor">` +
+        dateStringCarrousel5 +
+        ` <br> ` +
+        myJSONCarrousel.data["4"].author.name +
+        `</p>
+                    </div>
+                </div>
+            </div>
+            <div class="carrousel-card-node">
+                <div class="carrousel-card-image">
+                <img src="` +
+        myJSONCarrousel.data["5"].image.styles.square_circle +
+        `" alt="` +
+        myJSONCarrousel.data["5"].image.description +
+        `">
+                </div>
+                <div class=carrousel-card-content onclick="location.href='#';" style="cursor: pointer;">
+                    <div class=carrousel-border>
+                    <p class="the-best">` +
+        myJSONCarrousel.data["5"].taxonomy.name +
+        `</p>
+                    <h2>` +
+        myJSONCarrousel.data["5"].title +
+        `</h2>
+                    <p class= "editor">` +
+        dateStringCarrousel6 +
+        ` <br> ` +
+        myJSONCarrousel.data["5"].author.name +
+        `</p>
+                    </div>
+                </div>
+            </div>
+            
+        </div>
+      `;
+
+      // CARROUSEL JAVASCRIPT
+
+      $("#carrousel").slick({
+        slidesToShow: 3,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 4000,
+        prevArrow:
+          '<button class="slick-prev" aria-label="Previous" type="button">PREV</button>',
+        nextArrow:
+          '<button class="slick-next" aria-label="Next" type="button">NEXT</button>',
+      });
+    });
+});
+
+// FEATURE HEALTHY
+
+document.addEventListener("DOMContentLoaded", function () {
+  var divTextHealthy = document.getElementById("healthy");
+
+  fetch(
+    "http://api.imagendigital.com/v2/cocinadelirante/node.json/339fd1e0444ddbbd4d4528d8df161108?taxonomy.tid=13&fields=id,title,url,image,preference,taxonomy.name&type=receta&limit=3&offset=3"
+  )
+    .then(function (respuesta) {
+      return respuesta.json();
+    })
+    .then(function (myJSONHealthy) {
+      divTextHealthy.innerHTML =
+        `
+      <div class=card-node>
+            <div class=card-image>
+                <a href=""><img src="` +
+        myJSONHealthy.data["0"].image.styles.square_circle +
+        `" alt="` +
+        myJSONHealthy.data["0"].image.description +
+        `"></a>
+            </div>
+            <div class=card-content onclick="location.href='#';" style="cursor: pointer;">
+                <div class=border>
+                <p>` +
+        myJSONHealthy.data["0"].taxonomy.name +
+        `</p>
+                <h2>` +
+        myJSONHealthy.data["0"].title +
+        `</h2>
+            </div>
+            </div>
+        </div>
+        <div class=card-node>
+            <div class=card-image>
+                <a href=""><img src="` +
+        myJSONHealthy.data["1"].image.styles.square_circle +
+        `" alt="` +
+        myJSONHealthy.data["1"].image.description +
+        `"></a>
+            </div>
+            <div class=card-content onclick="location.href='#';" style="cursor: pointer;">
+                <div class=border>
+                <p>` +
+        myJSONHealthy.data["1"].taxonomy.name +
+        `</p>
+                <h2>` +
+        myJSONHealthy.data["1"].title +
+        `</h2>
+                </div>
+            </div>
+        </div>
+        <div class=card-node>
+            <div class=card-image>
+                <a href=""><img src="` +
+        myJSONHealthy.data["2"].image.styles.square_circle +
+        `" alt="` +
+        myJSONHealthy.data["2"].image.description +
+        `"></a>
+            </div>
+            <div class=card-content onclick="location.href='#';" style="cursor: pointer;">
+                <div class=border>
+                <p>` +
+        myJSONHealthy.data["2"].taxonomy.name +
+        `</p>
+                <h2>` +
+        myJSONHealthy.data["2"].title +
+        `</h2>
+            </div>
+            </div>
+        </div>`;
+    });
+});
+
 var cardcita;
 
 fetch(
-  "http://api.imagendigital.com/v2/cocinadelirante/node.json/339fd1e0444ddbbd4d4528d8df161108?taxonomy.tid=13&type=receta"
+  "http://api.imagendigital.com/v2/cocinadelirante/node.json/339fd1e0444ddbbd4d4528d8df161108?taxonomy.tid=13&fields=id,title,url,created,summary,image,preference,author,taxonomy.name&type=receta&limit=1&offset=6"
 )
   .then(function (response) {
     return response.json();
   })
-  .then(function (jsonData) {
-    cardcita = jsonData;
+  .then(function (jsonBigcard) {
+    cardcita = jsonBigcard;
 
     document.getElementById("central_card_img1").innerHTML =
-      '<img src= "' + cardcita.data[6].image.url + '" alt="">';
+      '<img src= "' + cardcita.data[0].image.url + '" alt="">';
     document.getElementById("Category-central").innerHTML =
-      cardcita.data[6].taxonomy.name;
-    document.getElementById("title-central").innerHTML = cardcita.data[6].title;
-    let timeStamp_value = cardcita.data[6].created;
+      cardcita.data[0].taxonomy.name;
+    document.getElementById("title-central").innerHTML = cardcita.data[0].title;
+    let timeStamp_value = cardcita.data[0].created;
     theDate = new Date(timeStamp_value * 1000);
     dateString = theDate.toLocaleDateString();
     document.getElementById("datetime").innerHTML = dateString;
     document.getElementById("spancito").innerHTML =
-      cardcita.data[6].author.name;
-    document.getElementById("parrafin").innerHTML = cardcita.data[6].summary;
+      cardcita.data[0].author.name;
+    document.getElementById("parrafin").innerHTML = cardcita.data[0].summary;
   });
 
 var myCard;
 
 fetch(
-  "http://api.imagendigital.com/v2/cocinadelirante/node.json/339fd1e0444ddbbd4d4528d8df161108?taxonomy.tid=13&type=receta"
+  "http://api.imagendigital.com/v2/cocinadelirante/node.json/339fd1e0444ddbbd4d4528d8df161108?taxonomy.tid=13&fields=id,title,url,created,summary,image,preference,author,taxonomy.name&type=receta&limit=1&offset=7"
 )
   .then(function (response) {
     return response.json();
@@ -35,16 +338,16 @@ fetch(
     myCard = jsonwithData;
 
     document.getElementById("Category-central2").innerHTML =
-      myCard.data[7].taxonomy.name;
-    document.getElementById("title-central2").innerHTML = myCard.data[7].title;
-    let timeStamp_value = myCard.data[7].created;
+      myCard.data[0].taxonomy.name;
+    document.getElementById("title-central2").innerHTML = myCard.data[0].title;
+    let timeStamp_value = myCard.data[0].created;
     theDate = new Date(timeStamp_value * 1000);
     dateString = theDate.toLocaleDateString();
     document.getElementById("datetime2").innerHTML = dateString;
     document.getElementById("spancitito").innerHTML =
-      myCard.data[7].author.name;
-    document.getElementById("parrafito").innerHTML = myCard.data[7].summary;
+      myCard.data[0].author.name;
+    document.getElementById("parrafito").innerHTML = myCard.data[0].summary;
     document.getElementById("central_card_img2").innerHTML =
-      '<img src= "' + myCard.data[7].image.url + '" alt="">';
-    console.log(myCard.data[7].image.url);
+      '<img src= "' + myCard.data[0].image.url + '" alt="">';
+    console.log(myCard.data[0].image.url);
   });

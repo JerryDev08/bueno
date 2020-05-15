@@ -3,20 +3,16 @@ body {
   font-family: "Montserrat", sans-serif;
   color: #7a7a7a;
 }
-
 /*Header*/
-
 div.header-img {
   display: flex;
   justify-content: center;
   margin: 2%;
 }
-
 /*Nav-bar*/
-
 #nav-bar {
   margin-left: 14.5%;
-  margin-bottom: 1%;
+  margin-bottom: 1.5%;
 }
 #nav-bar a {
   background-color: white;
@@ -32,18 +28,15 @@ div.header-img {
 #nav-bar a:hover {
   color: #b0c364;
 }
-
 /*Carrousel*/
-
 #carrousel-section {
   max-width: 1200px;
   margin: 0 auto;
+  margin-bottom: 3.5%;
 }
 
 #carrousel {
   font-family: "Montserrat", sans-serif;
-  /* width: 100%; */
-  /* max-width: 1200px; */
   margin: 0 auto;
   position: relative;
 }
@@ -56,20 +49,20 @@ button.slick-arrow {
   font-family: "Montserrat", sans-serif;
   font-size: 11px;
   font-weight: bold;
-  padding: 11px 24px;
+  padding: 1% 2%;
   position: absolute;
   border: none;
 }
 
 button.slick-arrow.slick-prev {
   top: 45%;
-  left: 15px;
+  left: 1.25%;
   z-index: 1;
 }
 
 button.slick-arrow.slick-next {
   top: 45%;
-  right: 15px;
+  right: 1.25%;
   z-index: 1;
 }
 
@@ -82,7 +75,6 @@ button.slick-arrow.slick-next:hover {
 }
 
 div.carrousel-card-node {
-  /* width: 33%; */
   float: left;
   box-sizing: border-box;
   position: relative;
@@ -103,21 +95,17 @@ div.carrousel-card-node div.carrousel-card-image img {
 }
 
 div.carrousel-card-node div.carrousel-card-content {
-  top: 40px;
-  left: 25px;
-  width: 260px;
-  height: 230px;
-  margin: 30px;
-  background-color: white;
+  top: 70px;
+  left: 50px;
+  width: 270px;
+  height: 225px;
+  background-color: #ffffff;
   padding: 15px;
   position: absolute;
   opacity: 0;
   transition: opacity 0.5s;
 }
 
-/* div.carrousel-card-node.slick-active[data-slick-index="1"] div.carrousel-card-content {
-  opacity: 1;
-} */
 div.carrousel-card-node.slick-current
   + .slick-active
   div.carrousel-card-image
@@ -135,25 +123,28 @@ div.carrousel-card-node.slick-current
 div.carrousel-card-node div.carrousel-card-content p.the-best {
   color: #b0c364;
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
+  margin-top: 10px;
 }
 
 div.carrousel-card-node div.carrousel-card-content p.editor {
   color: #7a7a7a;
   font-weight: bolder;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
 }
 
 .carrousel-border {
   border: 2px solid #b0c364;
-  height: 180px;
-  padding-top: 45px;
+  height: 218px;
 }
 div.carrousel-card-node div.carrousel-card-content h2 {
   color: black;
   text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
 }
 .boton-prev {
   background-color: #b0c364;
@@ -185,17 +176,12 @@ div.carrousel-card-node div.carrousel-card-content h2 {
   right: 27px;
 }
 
-#clear {
-  clear: both;
-}
-
 /*Cards healthy*/
-
 #healthy {
+  font-family: "Montserrat", sans-serif;
   width: 73%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 3%;
 }
 div.card-node {
   width: 33%;
@@ -208,42 +194,48 @@ div.card-node div.card-image img {
   width: 100%;
 }
 div.card-node div.card-content {
-  top: 60px;
-  left: 23px;
-  width: 260px;
-  height: 100px;
-  margin: /*30px*/ 0 auto;
-  margin-top: 3%;
-  margin-left: 2.5%;
-  background-color: white;
-  padding:/*15px*/ 5%;
+  top: 40px;
+  left: 10px;
+  width: 230px;
+  height: 170px;
+  margin-top: 10%;
+  margin-left: 11%;
+  background-color: #ffffff;
+  padding: 15px;
   position: absolute;
 }
 div.card-node div.card-content p {
   color: #b0c364;
-  font-weight: bolder;
+  font-weight: 600;
   font-size: 12px;
   text-align: center;
 }
+
 .border {
   border: 2px solid #b0c364;
+  height: 165px;
 }
 div.card-node div.card-content h2 {
-  color: #000000;
+  color: black;
   text-align: center;
+  font-size: 19px;
+  padding: 0 10px;
 }
-div.clear {
+
+#clear {
   clear: both;
 }
 
+#clear {
+  clear: both;
+}
 /* Central Cards*/
-
 div.central_card {
   display: flex;
   width: 73%;
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 3%;
+  margin-top: 31%;
   margin-bottom: 2%;
   padding: 1%;
   padding-bottom: 0%;
@@ -251,18 +243,19 @@ div.central_card {
 }
 div.central_card h4 {
   color: #b0c364;
-  font-size: 13px;
+  font-size: 15px;
+  margin-top: 4.5%;
 }
 div.central_card h2 {
   color: #000000;
   font-weight: 600;
 }
 div.central_card time {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 div.central_card span {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 div.central_card div.central_card_img {
@@ -290,7 +283,6 @@ div.central_card div.central_card_txt button {
   background-color: #b0c364;
   border: none;
   padding: 3% 4%;
-  cursor: pointer;
 }
 div.central_card2 {
   display: flex;
@@ -303,18 +295,19 @@ div.central_card2 {
 }
 div.central_card2 h4 {
   color: #b0c364;
-  font-size: 13px;
+  font-size: 15px;
+  margin-top: 4.5%;
 }
 div.central_card2 h2 {
   color: #000000;
   font-weight: 600;
 }
 div.central_card2 time {
-  font-size: 12px;
+  font-size: 13px;
   font-weight: 600;
 }
 div.central_card2 span {
-  font-size: 12px;
+  font-size: 14px;
   font-weight: 600;
 }
 div.central_card2 div.central_card_img2 {
@@ -343,11 +336,8 @@ div.central_card2 div.central_card_txt2 button {
   box-shadow: none;
   border: none;
   padding: 3% 4%;
-  cursor: pointer;
 }
-
 /*mid cards*/
-
 div.last_section {
   display: flex;
   float: left;
@@ -380,7 +370,6 @@ div.main-content-h1 p {
 div.main-content-h2 h2 {
   font-weight: bolder;
   font-size: 25px;
-  color: #000000;
 }
 div.main-content-h2 div.main-content-date time {
   color: #7a7a7a;
@@ -422,19 +411,18 @@ div.general div.contenido {
   box-sizing: border-box;
   padding: 0 6px;
   padding-left: 20px;
-  margin-top: -14px;
 }
 div.general div.contenido h2 {
+  font-family: montserrat;
   font-size: 14px;
   font-weight: bold;
-  color: #000000;
 }
 div.general div.contenido p {
+  font-family: montserrat;
   font-size: 8px;
   font-weight: bold;
   color: #7a7a7a;
 }
-/*Footer*/
 footer p {
   margin-left: 15%;
   font-size: 12px;
