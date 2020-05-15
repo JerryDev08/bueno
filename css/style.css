@@ -226,9 +226,6 @@ div.card-node div.card-content h2 {
   clear: both;
 }
 
-#clear {
-  clear: both;
-}
 /* Central Cards*/
 div.central_card {
   display: flex;
@@ -283,6 +280,7 @@ div.central_card div.central_card_txt button {
   background-color: #b0c364;
   border: none;
   padding: 3.4% 7%;
+  cursor: pointer;
 }
 div.central_card2 {
   display: flex;
