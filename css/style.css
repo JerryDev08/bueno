@@ -1,0 +1,467 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat:300,400,500,600,700,800&display=swap");
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #7a7a7a;
+}
+/*Header*/
+div.header-img {
+  display: flex;
+  justify-content: center;
+  margin: 2%;
+}
+/*Nav-bar*/
+#nav-bar {
+  margin-left: 14.5%;
+  margin-bottom: 1.5%;
+}
+#nav-bar a {
+  background-color: white;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  font-weight: 600;
+  color: rgb(66, 66, 66);
+  text-decoration: none;
+  display: inline;
+  justify-content: right;
+  margin-left: 17px;
+}
+#nav-bar a:hover {
+  color: #b0c364;
+}
+/*Carrousel*/
+#carrousel-section {
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 3.5%;
+}
+
+#carrousel {
+  font-family: "Montserrat", sans-serif;
+  margin: 0 auto;
+  position: relative;
+}
+
+button.slick-arrow {
+  background-color: #b0c364;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 11px;
+  font-weight: bold;
+  padding: 1% 2%;
+  position: absolute;
+  border: none;
+}
+
+button.slick-arrow.slick-prev {
+  top: 45%;
+  left: 1.25%;
+  z-index: 1;
+}
+
+button.slick-arrow.slick-next {
+  top: 45%;
+  right: 1.25%;
+  z-index: 1;
+}
+
+button.slick-arrow.slick-prev:hover {
+  background-color: #bed36c;
+}
+
+button.slick-arrow.slick-next:hover {
+  background-color: #bed36c;
+}
+
+div.carrousel-card-node {
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+div.carrousel-card-node div.carrousel-card-image {
+  background-color: #000;
+}
+
+div.carrousel-card-node div.carrousel-card-image img {
+  width: 100%;
+  opacity: 0.5;
+  transition: opacity 0.5s;
+}
+
+div.carrousel-card-node div.carrousel-card-content {
+  top: 70px;
+  left: 50px;
+  width: 270px;
+  height: 225px;
+  background-color: #ffffff;
+  padding: 15px;
+  position: absolute;
+  opacity: 0;
+  transition: opacity 0.5s;
+}
+
+div.carrousel-card-node.slick-current
+  + .slick-active
+  div.carrousel-card-image
+  img {
+  opacity: 1;
+}
+
+div.carrousel-card-node.slick-current
+  + .slick-active
+  div.carrousel-card-content {
+  opacity: 1;
+  opacity: 1;
+}
+
+div.carrousel-card-node div.carrousel-card-content p.the-best {
+  color: #b0c364;
+  font-weight: bolder;
+  font-size: 14px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+div.carrousel-card-node div.carrousel-card-content p.editor {
+  color: #7a7a7a;
+  font-weight: bolder;
+  font-size: 14px;
+  text-align: center;
+}
+
+.carrousel-border {
+  border: 2px solid #b0c364;
+  height: 218px;
+}
+div.carrousel-card-node div.carrousel-card-content h2 {
+  color: black;
+  text-align: center;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 22px;
+}
+.boton-prev {
+  background-color: #b0c364;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 24px;
+  text-decoration: none;
+  position: absolute;
+  top: 45%;
+  left: 15px;
+}
+
+.boton-next {
+  background-color: #b0c364;
+  display: inline-block;
+  cursor: pointer;
+  color: #ffffff;
+  font-family: "Montserrat", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  padding: 10px 24px;
+  text-decoration: none;
+  position: absolute;
+  top: 45%;
+  right: 27px;
+}
+
+/*Cards healthy*/
+#healthy {
+  font-family: "Montserrat", sans-serif;
+  width: 73%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+div.card-node {
+  width: 33%;
+  float: left;
+  box-sizing: border-box;
+  position: relative;
+  padding: 15px;
+}
+div.card-node div.card-image img {
+  width: 100%;
+}
+div.card-node div.card-content {
+  top: 40px;
+  left: 10px;
+  width: 230px;
+  height: 170px;
+  margin-top: 10%;
+  margin-left: 11%;
+  background-color: #ffffff;
+  padding: 15px;
+  position: absolute;
+}
+div.card-node div.card-content p {
+  color: #b0c364;
+  font-weight: 600;
+  font-size: 12px;
+  text-align: center;
+}
+
+.border {
+  border: 2px solid #b0c364;
+  height: 165px;
+}
+div.card-node div.card-content h2 {
+  color: black;
+  text-align: center;
+  font-size: 19px;
+  padding: 0 10px;
+}
+
+#clear {
+  clear: both;
+}
+
+/* Central Cards*/
+div.central_card {
+  display: flex;
+  width: 73%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 31%;
+  margin-bottom: 2%;
+  padding: 1%;
+  padding-bottom: 0%;
+  box-sizing: border-box;
+}
+div.central_card h4 {
+  color: #b0c364;
+  font-size: 15px;
+  margin-top: 4.5%;
+}
+div.central_card h2 {
+  color: #000000;
+  font-weight: 600;
+}
+div.central_card time {
+  font-size: 13px;
+  font-weight: 600;
+}
+div.central_card span {
+  font-size: 14px;
+  font-weight: 600;
+}
+div.central_card div.central_card_img {
+  float: left;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  width: 49%;
+  height: auto;
+}
+div.central_card div.central_card_img img {
+  width: 100%;
+  height: auto;
+}
+div.central_card div.central_card_txt {
+  width: 51%;
+  height: auto;
+  text-align: center;
+  padding-top: 5%;
+  padding-left: 2%;
+  font-weight: 500;
+}
+div.central_card div.central_card_txt button {
+  color: #ffffff;
+  background-color: #b0c364;
+  border: none;
+  padding: 3.4% 7%;
+  cursor: pointer;
+}
+div.central_card2 {
+  display: flex;
+  width: 73%;
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-bottom: 4%;
+  padding: 1%;
+  box-sizing: border-box;
+}
+div.central_card2 h4 {
+  color: #b0c364;
+  font-size: 15px;
+  margin-top: 4.5%;
+}
+div.central_card2 h2 {
+  color: #000000;
+  font-weight: 600;
+}
+div.central_card2 time {
+  font-size: 13px;
+  font-weight: 600;
+}
+div.central_card2 span {
+  font-size: 14px;
+  font-weight: 600;
+}
+div.central_card2 div.central_card_img2 {
+  float: right;
+  justify-content: center;
+  padding-top: 0%;
+  width: 49%;
+  height: auto;
+}
+div.central_card2 div.central_card_img2 img {
+  width: 100%;
+  height: auto;
+}
+div.central_card2 div.central_card_txt2 {
+  float: left;
+  width: 51%;
+  height: auto;
+  text-align: center;
+  padding-top: 5%;
+  padding-right: 2%;
+  font-weight: 500;
+}
+div.central_card2 div.central_card_txt2 button {
+  color: #ffffff;
+  background-color: #b0c364;
+  box-shadow: none;
+  border: none;
+  padding: 3.4% 7%;
+}
+/*mid cards*/
+div.size {
+  width: 45%;
+  margin-left: 6.5%;
+}
+div.size a {
+  text-decoration: none;
+}
+div.category-left {
+  display: flex;
+  width: 100%;
+  max-width: 1200px;
+  margin-left: 19.8%;
+  margin-top: 1%;
+  margin-bottom: 2%;
+  padding: 1%;
+  padding-bottom: 0%;
+}
+div.category-left h4 {
+  color: #b0c364;
+  font-size: 13px;
+}
+div.category-left h2 {
+  color: #000000;
+  font-weight: 600;
+}
+div.category-left time {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a7a7a;
+}
+div.category-left span {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a7a7a;
+}
+div.category-left div.category-left-img {
+  float: left;
+  justify-content: center;
+  padding-top: 1%;
+  padding-bottom: 0%;
+  width: 49%;
+  height: auto;
+}
+div.category-left div.category-left-img img {
+  width: 100%;
+  height: auto;
+}
+div.category-left div.category-left-txt {
+  width: 60%;
+  height: 30%;
+  text-align: left;
+  margin-top: -0.5%;
+  padding-left: 2%;
+  margin-left: 2%;
+  font-weight: 500;
+  font-size: 12px;
+  line-height: 20px;
+}
+div.category-left div.category-left-txt p {
+  font-size: 13px;
+  font-weight: 600;
+  color: #7a7a7a;
+}
+div.clear {
+  clear: both;
+}
+
+/*Last cards*/
+#cards-derecha {
+  width: 30%;
+  margin-left: 69%;
+  margin-top: -49.1%;
+}
+
+.general {
+  width: 260px;
+  margin-bottom: 20px;
+  background-color: white;
+  height: auto;
+}
+
+div.general div.imagen {
+  width: 40%;
+  display: inline-block;
+}
+
+div.general div.imagen img {
+  width: 100%;
+  height: auto;
+}
+
+div.card {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+
+div.general div.contenido {
+  width: 60%;
+  box-sizing: border-box;
+  display: inline-block;
+  padding: 0 10px;
+}
+
+div.general div.contenido h2 {
+  font-family: montserrat;
+  font-size: 11.5px;
+  font-weight: 600;
+  color: #000000;
+  margin-top: 0;
+}
+
+div.general div.contenido p {
+  font-family: montserrat;
+  font-size: 9px;
+  font-weight: 600;
+  color: #7a7a7a;
+}
+
+.clear-float {
+  clear: both;
+}
+footer p {
+  margin-left: 15.9%;
+  margin-top: 9%;
+  margin-bottom: 2%;
+  font-size: 13px;
+  font-weight: 600;
+}
